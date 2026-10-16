@@ -1,0 +1,41 @@
+{
+  "name": "sports-historyx",
+  "version": "2.0.0",
+  "description": "Free historical data website for Cricket & Football (2000–present). Auto-updating.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "build": "echo \"No build step required\"",
+    "refresh": "node -e \"require('./server.js'); setTimeout(()=>process.exit(0), 3000)\""
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3",
+    "axios": "^1.7.7",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.4.5"
+  },
+  "keywords": [
+    "cricket",
+    "football",
+    "sports",
+    "history",
+    "api",
+    "free"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/sports-historyx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/sports-historyx/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/sports-historyx#readme"
+}
